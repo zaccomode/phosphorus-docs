@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 652 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-3814,-514)">
+        <g transform="matrix(0.72,0,0,3,3080,0)">
+            <g transform="matrix(1,0,0,1,0,153.333)">
+                <g transform="matrix(1.38889,-0,-0,0.333333,1019.44,18)">
+                    <use xlink:href="#_Image1" x="3.894" y="3.895" width="645.221px" height="285.228px" transform="matrix(0.998794,0,0,0.997301,0,0)"/>
+                </g>
+                <g transform="matrix(2.08333,0,0,0.5,638.889,-73.3333)">
+                    <path d="M600,203.333C600,201.492 598.508,200 596.667,200C560.394,200 239.606,200 203.333,200C201.492,200 200,201.492 200,203.333C200,224.131 200,335.869 200,356.667C200,358.508 201.492,360 203.333,360C239.606,360 560.394,360 596.667,360C598.508,360 600,358.508 600,356.667C600,335.869 600,224.131 600,203.333Z" style="fill:rgb(27,27,41);"/>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,26.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">1</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.78244e-31,0.333333,-1125,26.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">let</text>
+                    <text x="1660px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">range =</text>
+                    <text x="1740px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">new</text>
+                    <text x="1780px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">Ph_Range</text>
+                    <text x="1860px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">({</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-1097.22,36.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">minValue:</text>
+                    <text x="1720px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">1</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">,</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-1097.22,46.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">maxValue:</text>
+                    <text x="1720px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">8</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">,</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-1097.22,56.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">step:</text>
+                    <text x="1680px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">1</text>
+                    <text x="1690px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">,</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-1097.22,66.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">parent: rangeParent</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,36.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">2</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,46.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">3</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,56.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">4</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,66.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">5</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,76.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">6</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-1166.67,86.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">7</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.78244e-31,0.333333,-1125,76.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">});</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.78244e-31,0.333333,-1125,86.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">range.</text>
+                    <text x="1680px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">instantiate</text>
+                    <text x="1790px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">();</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="646px" height="286px" xlink:href="data:image/png;base64,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"/>
+    </defs>
+</svg>

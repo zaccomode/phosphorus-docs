@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Browser -->
+        <title>Home | Phosphorus</title>
+
+        <!-- JS -->
+        <script src="./js/global.js"></script>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        
+        <!-- PHOSPHORUS -->
+        <link rel="stylesheet" href="./phosphorus/framework.css">
+        <link rel="stylesheet" href="./phosphorus/app_framework.css">
+        <link rel="stylesheet" href="./phosphorus/dependencies.css">
+        <link rel="stylesheet" href="./css/pages/index.css">
+
+        <script src="./phosphorus/framework.js"></script>
+    </head>
+
+    <body onload="loadFramework()">
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- NAV RAIL -->
+            <aside class="nav-rail">
+                <button class="button icon outlined"><span class="material-icons-round">home</span></button>
+                <button class="button icon"><span class="material-icons-round">download</span></button>
+            </aside>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <div class="content">
+
+                <!-- INTRO -->
+                <section class="section section-open" id="anchor-introduction">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Introduction</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <h1>This is Phosphorus</h1>
+                        <h4>A web design framework constructed by <a href="https://isaacshea.com/" target="_blank">Isaac Shea</a>.</h4>
+                        <p>
+                            <i>Phosphorus is a pragmatic design framework that is the culmination of everything I have learned about interaction design since I started designing for technology half a decade ago. It, at its core, is meant to be a tool to not only allow me to rapidly prototype and develop applications, but also build something extensible and stable from a user experience point of view. Phosphorus is a web design framework, constructed out of pure HTML, CSS and JS, but it's also a system of design that helps create spacious yet rich interfaces that, in my opinion, combine the best of most modern design languages.</i> <br> <b> - Isaac</b>
+                            <br> <br>
+                            Phosphorus is split into two core systems - <b>Web</b> and <b>App</b>. While core elements such as buttons, inputs and other interactables are constant across both systems, Web and App are designed for the difference in layouts their target applications may require.
+                            <br>
+                            Phosphorus: Web is designed for ‘traditional’ webpages, such as portfolio sites and some marketplaces, whereas Phosphorus: App is primarily built for web-based applications such as administrative dashboards. Both could be used interchangeably, but it’s worth the time in figuring out which layout will suit your application.
+                            <br> <br>
+                            This manual will assume a basic knowledge of user experience principles, and as such will not spend time instructing where and how to place trivial items. What it will do, however, is demonstrate the capabilities of some of Phosphorus’ more unique features.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- SETUP -->
+                <section class="section" id="anchor-setup">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Setup</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            To begin, download the <a>latest version of Phosphorus relevant to your project</a>[link not yet added]. If you're unsure of which version, a description of both instances and their uses is available on the download page.
+                            <br> <br>
+                            Once you've downloaded the .zip file for Phosphorus, move into your project folder at the top level (ensure the .zip file sits on the same level as your index.html file). Then, unzip the file and delete the .zip if it was not already done.
+                        </p>
+                        
+                        <div class="sep horizontal"></div>
+
+                        <p>
+                            A new directory named <code>Phosphorus</code> should have been created, and within it the following files:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>framework.css:</b> the primary file that contains a base-level styling system across both types of Phosphorus. This is where common input elements such as buttons and text inputs are styled.
+                            </li>
+                            <li>
+                                <b>framework.js:</b> the JS file containing all the code to assist the instantiation and functionality of your page. This is identical across both Phosphorus instances.
+                            </li>
+                            <li>
+                                <b>app_framework.css:</b> another CSS file that contains the elements and layout systems specific to the App instance of Phosphorus. Importing this in conjunction with web_framework.css is likely to cause unexpected results.
+                            </li>
+                            <li>
+                                <b>dependencies.css:</b> this file contains the variables for the colors and fonts used to create the page. Essentially any CSS variables are stored in one place within this file.
+                            </li>
+                        </ul>
+                        <p>
+                            It's worth noting that these files <b>should not be moved to any other folder</b> as they all rely on one another to function correctly. Additionally, avoid editing any of the files except <code>dependencies.css</code> unless you have a solid understanding of how the system functions.
+                        </p>
+
+                        <div class="sep horizontal"></div>
+                        
+                        <p>
+                            With that explained, let's explore how to import these files to use in your project. This example will import only into an <code>index.html</code> page, but the general concept applies to any other html document.
+                        </p>
+
+                        <h4>Importing into HTML</h4>
+                        <p>
+                            Within the <code>&lt;head&gt;</code> element of your page, use the following code to import Phosphorus:
+                        </p>
+                        <div class="content-vertical content-code">
+                            <img class="code" src="./content/media/code/setup/slice19.svg">
+                        </div>
+
+                        <h4>Loading the framework</h4>
+                        <p>
+                            Within the <code>&lt;body&gt;</code> tag, add the following code.
+                        </p>
+                        <div class="content-vertical content-code">
+                            <img class="code" src="./content/media/code/setup/slice21.svg">
+                        </div>
+                        <p>
+                            This effectively allows Phosphorus to step in as middleware to make some final changes to your page before it's shown to users. The setup is now done, but before you get ahead of yourself, it's worth understanding how Phosphorus functions.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- FLOW -->
+                <section class="section" id="anchor-flow">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Development Flow</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            It's worth understanding how Phosphorus functions, at least on a basic level, before jumping in and getting caught up in its complexities.
+                            <br> <br>
+                            Phosphorus was designed to make development quick and easy, while hiding any technical elements from users. As a result, it will check upon loading the page that elements you want to create with it are done so correclty, and if not it should error and tell you what is wrong.
+                            <br>
+                            For this reason, I recommend using Visual Studio: Code and the Live Server extension (or some equivalent), and having DevTools panel open to the console tab on the browser you're using to develop, as Phosphorus makes copious use of the console to send errors and warnings in the hope to decrease development time and difficulty.  
+                        </p>
+                        <h4>How this looks in practice</h4>
+                        <p>
+                            Upon a page being loaded, the <code>framework.js</code> file will automatically index every element with the proper classes added in an attempt to convert it to a Phosphorus Object. Should it fail to do so, it will post an error to the DevTools console panel, and should it encounter a non-fatal error it will post a warning. It's worth keeping a good eye on the console panel for that reason - most errors Phosphorus encounters will be posted here for your information.
+                        </p>
+
+                        <div class="container">
+                            <header>
+                                <h3>Elements vs Objects</h3>
+                                <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                            </header>
+                            <div class="container-content">
+                                <p>
+                                    There's an important distinction that this manual will make between HTML Elements and Phosphorus Objects. 
+                                    <br> <br>
+                                    An HTML Element is essentially a native element with your own styling applied to it (if any). It's not special or enhanced in any way. A Phosphorus Object, by contrast, is an abstraction layer that sits on top of a regular HTML Element that brings important information such as an input's value, etc. to the highest layer in an attempt to replace:
+                                </p>
+                                <div class="content-vertical content-code">
+                                    <img class="code" src="./content/media/code/setup/slice20.svg">
+                                </div>
+                                <p>
+                                    This flow should become clearer as you continue developing with Phosphorus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="container container-open">
+                            <header>
+                                <h3>Construction -> Instantiation -> Initialisation</h3>
+                                <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                            </header>
+                            <div class="container-content">
+                                <p>
+                                    Integral to understanding how Phosphorus functions is understanding the Construction Flow. Every Object will have a three-step cycle applied to it before it becomes completely usable on the webpage.
+                                    <br> <br>
+                                    As a core principle, this flow is designed to replace the tedious process of navigating JavaScript DOM management, although will not be usable everywhere.
+                                </p>
+                                
+                                <h4>Construction</h4>
+                                <p>
+                                    To define an Object and its attributes, it must be constructed.
+                                </p>
+                                <div class="content-vertical content-code">
+                                    <img class="code" src="./content/media/code/buttons/slice11.svg">
+                                </div>
+                                <p>
+                                    Constructing an Object provides Phosphorus with most, if not all, of the necessary information it requires to build the object exactly as you require it, while providing it an opportunity to throw errors or warnings that could cause headaches if left without this middleware.
+                                    <br> <br>
+                                    <b>Constructing an Object will NOT make it appear on the page.</b>
+                                </p>
+
+                                <div class="sep horizontal"></div>
+
+                                <h4>Instantiation</h4>
+                                <p>
+                                    Instantiation is a single function, called with <code>Ph_Object.instantiate();</code> that handles all the JavaScript DOM of creating the Object, and will return the HTML element once complete.
+                                    <br> <br>
+                                    It is during instantiation that an object will appear on the page, appended to the parent object specified upon construction.
+                                </p>
+
+                                <div class="sep horizontal"></div>
+
+                                <h4>Initialisation</h4>
+                                <p>
+                                    Initialisation is called on most Objects to create an ID and finalise anything needed for the element. This step varies heavily between Objects, and should be called by Phosphorus automatically.
+                                    <br> <br>
+                                    Once this step is done, the Object should be ready to use to its full capacity.
+                                </p>
+
+                                <div class="sep horizontal"></div>
+
+                                <h4>OnLoad vs Runtime</h4>
+                                <p>
+                                    Phosphorus Objects can be created both upon the page loading (called using the <code>onload="loadFramework();"</code> function we previously setup) and at runtime (using the JavaScript flow we just covered).
+                                    <br> <br>
+                                    The biggest difference between the two is that any elements created before loading the page have naturally already been instantiated, thus will be constructed and initialised by the <code>loadFramework()</code> function. Any other elements created at runtime must follow the process outlined above.
+                                </p>
+                            </div>
+                        </div>
+
+                        <h4>Phosphorus writes itself</h4>
+                        <p>
+                            There is a good chance that an element being converted to an Object will have additional code added to it, either for parity, identification or usability across devices. This manual should disclose when an element will be modified at loadtime where relevant, but as a general rule of thumb, every Object will be have <code>ph-[element-name]-[id]</code> added to its class list upon initialisation to make it easier to find later.
+                        </p>
+
+                        <h4>But what about performance?</h4>
+                        <p>
+                            This is a perfectly valid concern as the scripts to make Phosphorus possible <i>are</i> huge, but I've found that the load time of a page is negligibly affected the presence of the <code>framework.js</code> script as the vast majority of computers run modern browsers and have the processing power to handle this.
+                        </p>
+
+                        <h4>Final notes</h4>
+                        <p>
+                            At the end of the day, Phosphorus is designed to alleviate stress off of the developer and automate and compact the creation of elements by using the copious computing power available to browsers.
+                            <br> <br>
+                            One can only hope that the 2000+ lines of code required to make this possible is worth it.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- DEPENDENCIES -->
+                <section class="section" id="anchor-flow">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Dependencies</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            As we covered in the setup section, every instance of Phosphorus is packaged with the <code>dependencies.css</code> file. This file contains the variables controlling the colors, corner radius, animation speed and fonts for the project, among other things.
+                            <br> <br>
+                            Everything that can be customised universally is controlled here, so let's dissect what everything does.
+                        </p>
+
+                        <!-- COLOR -->
+                        <div class="container">
+                            <header>
+                                <h3>Colors</h3>
+                                <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                            </header>
+                            <div class="container-content">
+                                <p>
+                                    Phosphorus splits colors up into three main color types: primary, secondary and tertiary, each with numerous variations for different implementations.
+                                    <br> <br>
+                                    The primary color is the one that will make up the background elements of the page, and as such should be a neutral color.
+                                    <br> <br>
+                                    The secondary color is the 'accent' color for your site: it's used to bring attention to something or re-inforce a brand color. This should be something that fits well against both the primary and tertiary colors as it will be used closely with them.
+                                    <br> <br>
+                                    Finally, the tertiary color makes up the foreground elements of the site, such as text and lines. Because this is used for displaying text, it needs to be legible and inoffensive to your users' eyes, and should contrast excellently against the primary color.
+                                </p>
+
+                                <div class="sep horizontal"></div>
+
+                                <h4>Transparency effects</h4>
+                                <p>
+                                    For each color, a 25%, 50% and 75% opacity version exists for implementation on semi-transparent surfaces. It's worth noting that the actual transparency of these colors is not always exactly corresponding to these values; instead, treat it as a guideline to achieve the same visual consistency.
+                                </p>
+
+                                <div class="sep horizontal"></div>
+
+                                <h4>Dark mode</h4>
+                                <p>
+                                    If you haven't already noticed by perusing the <code>dependencies.css</code> file, Phosphorus implements the <code>prefers-color-scheme: dark</code> media query to improve usability in dark environments. While it's not entirely necessary to implement this in your project, here are a few arguments I've formed from my experience:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <b>Using a lighter theme by default is inviting to users:</b> 
+                                        anybody familiar with the messaging application Discord may be aware that they recently made the move from a primarily dark-themed interface to embracing their (much memed) light theme as the default scheme. Why? I theorise it's because a dark theme is far more threatening for new users. I myself remember being daunted by Discord's interface back when I joined in 2015.
+                                    </li>
+                                    <li>
+                                        <b>Using a darker theme in dark environments makes content more legible:</b> 
+                                        It's no secret that using a device with a high brightness in a dark environment leads to discomfort and squinting, but there's a point where a device on it's lowest brightness setting on a light-themed site is still too bright for some users. Making a website adapt (automatically!) with their preferences is just courtesy.
+                                    </li>
+                                </ul>
+                                <p>
+                                    Of course, these arguments are primarily pragmatic, so if you believe you have better judgement in this situation you are more than welcome to make modifications here as you see fit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- MISC -->
+                        <div class="container">
+                            <header>
+                                <h3>Miscellaneous</h3>
+                                <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                            </header>
+                            <div class="container-content">
+                                <h4>Corner rounding</h4>
+                                <p>
+                                    Controls the <code>border-radius</code> property of any relevant objects. By default this is set to <code>5px</code>.
+                                </p>
+
+                                <sep class="sep horizontal"></sep>
+
+                                <h4>Transition duration</h4>
+                                <p>
+                                    Controls the animation speed of some of the animations. By default this is <code>0.1s</code>.
+                                    <br> <br>
+                                    It's worth noting that not every css property is variable-compatible, so this variable may not work everywhere. Additionally, some animations are fixed to a different speed to this variable (notably the animation for the alert) for usability reasons.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FONTS -->
+                        <div class="container">
+                            <header>
+                                <h3>Fonts</h3>
+                                <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                            </header>
+                            <div class="container-content">
+                                <p>
+                                    Fonts are easily the most involved of the dependencies, and may require some modification to the framework files to function properly. 
+                                    <br> <br>
+                                    To properly explore how to use fonts, <a>go to the Fonts section</a>[link needed].
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INPUTS -->
+                <section class="section section-open" id="anchor-input-components">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Input Components</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            These are components available across all versions of Phosphorus.
+                        </p>
+
+                        <!-- BUTTONS -->
+                        <section class="section section-open" id="anchor-buttons">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Buttons</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Phosphorus’ button component is an extensible object with many combinations. There are layout, type and color variants that each provide different effects and extensions to the base object.
+                                        <br>
+                                        A button can support <b>up to 1 of each layout, type and color variant</b>, but any more may produce unexpected results.
+                                    </p>
+                                    <div class="content-code">
+                                        <button class="button">Button</button>
+                                        <p class="label">A regular button with no modifiers</p>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a default button, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/buttons/slice16.svg">
+                                        <p class="label">Note the parity between 'button' and 'link' elements.</p>
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/buttons/slice12.svg">
+                                        <p class="label">Note the button must be instantiated to become visible.</p>
+                                    </div>
+                                </div>
+
+                                <!-- LAYOUT VARIANTS -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Layout variants</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <!-- ICON BUTTON-->
+                                        <h4>Icon</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Creates a button with specific parameters to create a square icon button. This is specifically designed to work with <a href="https://fonts.google.com/icons">Google's Material Icons (rounded)</a>, which are a free and open-source icon library.
+                                                <br> <br>
+                                                <a href="#anchor-icons">Learn more about icons.</a>
+                                            </p>
+                                            <div class="content-code">
+                                                <button class="button icon"><span class="material-icons-round">home</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice15.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice11.svg">
+                                            </div>
+                                        </div>
+
+                                        <div class="sep horizontal"></div>
+
+                                        <!-- WITH ICON BUTTON-->
+                                        <h4>Text & Icon</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Creates a button with the relevant modifications to accommodate both an icon and text. The order of elements within the button will determine whether the icon is leading or trailing.
+                                            </p>
+                                            <div class="content-code">
+                                                <button class="button with-icon"><span class="material-icons-round">home</span>Home</button>
+                                                <button class="button with-icon">Home<span class="material-icons-round">home</span></button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice14.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice10.svg">
+                                                <p class="label">To create a trailing icon instead, set <code>isIconLeading</code> to <code>false</code>.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="sep horizontal"></div>
+
+                                        <!-- LIST BUTTON-->
+                                        <h4>List</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Modifies the button object to create a complex button capable of holding a title, subtitle, and fore and aft icons.
+                                                <br> <br>
+                                                Each list button must be created with a title, but should also contain an aft icon.
+                                            </p>
+                                            <div class="content-code">
+                                                <button class="button list">
+                                                    <span class="material-icons-round">verified_user</span>
+                                                    <div class="content-vertical">
+                                                        <h4>List Button</h4>
+                                                        <p>Result #1</p>
+                                                    </div>
+                                                    <span class="material-icons-round">keyboard_arrow_right</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice13.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice9.svg">
+                                                <p class="label">Phosphorus will return an error if no <code>title</code> is supplied.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- COLOR VARIANTS -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Color variants</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <!-- SECONDARY BUTTON-->
+                                        <h4>Secondary</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Changes the default color content of the button from the tertiary color to the secondary color, as defined in the current theme.
+                                                <br> <br>
+                                                <a href="#anchor-themes">Learn more about themes & dependencies.</a>
+                                            </p>
+                                            <div class="content-horizontal">
+                                                <button class="button secondary">Button</button>
+                                                <button class="button secondary outlined">Button</button>
+                                                <button class="button secondary contained">Button</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice8.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice7.svg">
+                                            </div>
+                                        </div>
+
+                                        <div class="sep horizontal"></div>
+
+                                        <!-- TERTIARY BUTTON-->
+                                        <h4>Tertiary</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Changes the default color content of the button to the primary color, as defined by the current theme. Contrary to its name, this variant will change the button to work well on tertiary-colored backgrounds, not to that color.
+                                            </p>
+                                            <div class="content-horizontal" style="margin-left: 10px; background-color: black;">
+                                                <button class="button tertiary">Button</button>
+                                                <button class="button tertiary outlined">Button</button>
+                                                <button class="button tertiary contained">Button</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice6.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice5.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TYPE VARIANTS -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Type variants</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <!-- OUTLINED BUTTON-->
+                                        <h4>Outlined</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Changes the button to use the <code>--[color]25</code> as the background and <code>--[color]75</code> as the border color.
+                                                <br> <br>
+                                                Useful for drawing attention to an important button.
+                                            </p>
+                                            <div class="content-horizontal">
+                                                <button class="button outlined">Button</button>
+                                                <button class="button secondary outlined">Button</button>
+                                                <button class="button tertiary outlined">Button</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice4.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice3.svg">
+                                            </div>
+                                        </div>
+
+                                        <div class="sep horizontal"></div>
+
+                                        <!-- CONTAINED BUTTON-->
+                                        <h4>Contained</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                Changes the button to display a button filled with its color variant, using its inverse color as the text content. Effectively an inverse regular button.
+                                                <br> <br>
+                                                <b>Use this type sparingly!</b> It is not user-friendly and is high-contrast. Opt for an outlined button where you can.
+                                            </p>
+                                            <div class="content-horizontal">
+                                                <button class="button contained">Button</button>
+                                                <button class="button secondary contained">Button</button>
+                                                <button class="button tertiary contained">Button</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice2.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice1.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- MISC VARIANTS -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Miscellaneous variants</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <!-- FOCUSED -->
+                                        <h4>Focused</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                When in focus according to the <code>:focus</code> selector, buttons will change their border color to their respective color. This is not modifiable with CSS or HTML, and is used primarily for accessibility purposes.
+                                                <br> <br>
+                                                <b>Note:</b> for whatever reason, this selector only functions with <code>button</code> elements, so a button created using the <code>a/link</code> tag won't receive this functionality.
+                                            </p>
+                                        </div>
+
+                                        <div class="sep horizontal"></div>
+
+                                        <!-- DISABLED -->
+                                        <h4>Disabled</h4>
+                                        <div class="content-horizontal">
+                                            <p>
+                                                When tagged with the <code>.disabled</code> class or the <code>:disabled</code> selector, the button will become 50% opaque and show the <code>not-allowed</code> cursor when hovered over.
+                                                <br> <br>
+                                                <b>Note:</b> using the <code>.disabled</code> class will not automatically disable a button's function. Either use the <code>:focus</code> selector or manually remove the button's function.
+                                            </p>
+                                            <div class="content-code">
+                                                <button disabled class="button outlined">Disabled</button>
+                                            </div>
+                                        </div>
+                                        <div class="content-horizontal">
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice18.svg">
+                                            </div>
+                                            <div class="content-vertical content-code">
+                                                <img class="code" src="./content/media/code/buttons/slice17.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+
+                                <p>
+                                    Regular and list buttons are created with different attributes as they differ so heavily from one another.
+                                    <br> <br>
+                                    Buttons also do not require initialisation and are not registered with an ID as they are simple HTML elements.
+                                </p>
+
+                                <!-- BUTTON ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Button</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>value</b></code> : <code>String</code> : 
+                                                Text content to display on the button.
+                                            </li>
+                                            <li>
+                                                <code><b>icon</b></code> : <code>String</code> : 
+                                                The name of the icon, as according to the icon pack.
+                                            </li>
+                                            <li>
+                                                <code><b>event</b></code> : <code>Function</code> : 
+                                                The JavaScript event to call upon activating the button. This can be set here or by accessing the <code>html</code> content manually later for more precision.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>color</b></code> : <code>String | 'primary'</code> : 
+                                                The name of the color to create this button as. It can be <code>'primary'</code>, <code>'secondary'</code>, or <code>'tertiary'</code>. Leaving this value blank will default to 'primary'.
+                                            </li>
+                                            <li>
+                                                <code><b>type</b></code> : <code>String | 'regular'</code> : 
+                                                The name of the type to create this button as. It can be <code>'regular'</code>, <code>'outlined'</code>, or <code>'contained'</code>. Leaving this value blank will default to 'regular'.
+                                            </li>
+                                            <li>
+                                                <code><b>isLink</b></code> : <code>Boolean | false</code> : 
+                                                Reformats the button to be created with an <code>a</code> element, thus allowing it to easily link to other pages or external sites. By default, a button is created with the <code>button</code> element.
+                                            </li>
+                                            <li>
+                                                <code><b>isIconLeading</b></code> : <code>Boolean | true</code> : 
+                                                In the instance that both <code>value</code> and valid <code>icon</code> attributes are provided, changing this attribute will determine whether the icon appears before or after the text content. Setting it to <code>true</code> (default) will make the icon appear first.
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                If set to true, the button will be created in a disabled state, disallowing any interactions and setting the opacity to 50%.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <!-- LISTBUTTON ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_ListButton</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>title</b></code> : <code>String</code> : 
+                                                The larger, <code>h4</code> content to display.
+                                            </li>
+                                            <li>
+                                                <code><b>subtitle</b></code> : <code>String</code> : 
+                                                Regularly-sized text content to display. Can be used without the <code>title</code> attribute.
+                                            </li>
+                                            <li>
+                                                <code><b>foreIcon</b></code> : <code>String</code> : 
+                                                The name of the icon, as according to the icon pack. Shown before any text content if provided.
+                                            </li>
+                                            <li>
+                                                <code><b>aftIcon</b></code> : <code>String</code> : 
+                                                The name of the icon, as according to the icon pack. Shown after any text content if provided, by default is set to a right-facing arrow with <code>'keyboard_arrow_right'</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>event</b></code> : <code>Function</code> : 
+                                                The JavaScript event to call upon activating the button. This can be set here or by accessing the <code>html</code> content manually later for more precision.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>color</b></code> : <code>String | 'primary'</code> : 
+                                                The name of the color to create this button as. It can be <code>'primary'</code>, <code>'secondary'</code>, or <code>'tertiary'</code>. Leaving this value blank will default to 'primary'.
+                                            </li>
+                                            <li>
+                                                <code><b>type</b></code> : <code>String | 'regular'</code> : 
+                                                The name of the type to create this button as. It can be <code>'regular'</code>, <code>'outlined'</code>, or <code>'contained'</code>. Leaving this value blank will default to 'regular'.
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                If set to true, the button will be created in a disabled state, disallowing any interactions and setting the opacity to 50%.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- DROPDOWNS/SELECTS -->
+                        <section class="section section-open" id="anchor-selects">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Dropdowns/Selects</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        The select object is a completely custom replacement to the native HTML select system. Functionally, it is identical, however the code to create this object differs dramatically from native HTML.
+                                    </p>
+                                    <div class="content-code">
+                                        <div class="input select" id="select-1">
+                                            <span>Dropdown placeholder...</span>
+                                            <span class="material-icons-round">keyboard_arrow_right</span>
+                                            <div>
+                                                <option disabled value="1">Option1</option>
+                                                <option value="2">Option2</option>
+                                                <option value="3">Option3</option>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a select, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice23.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice22.svg">
+                                    </div>
+                                </div>
+
+                                <!-- SELECT ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Select</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>placeholder</b></code> : <code>String</code> : 
+                                                The placeholder text to appear before an option is selected. Always trail with ellipsis.
+                                            </li>
+                                            <li>
+                                                <code><b>options</b></code> : <code>Array[Ph_SelectOption]</code> : 
+                                                An array of select options. See Ph_SelectOption Attributes for more information.
+                                            </li>
+                                            <li>
+                                                <code><b>selectedOption</b></code> : <code>Int | -1</code> : 
+                                                The index of the selected option for this dropdown, if any. <code>-1</code> when nothing.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>toggleOpen()</b></code> : 
+                                                Toggles whether the dropdown is opened.
+                                            </li>
+                                            <li>
+                                                <code><b>selectItem()</b></code> : <code>Int | id</code> :
+                                                Selects the option found with <code>id</code>, if any.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- SELECT OPTION ATTRIBUTES -->
+                                <div class="container container-open">
+                                    <header>
+                                        <h3>Ph_SelectOption</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>value</b></code> : <code>String</code> : 
+                                                The backend value associated with that option. Usually stored in the option element under the same attribute.
+                                            </li>
+                                            <li>
+                                                <code><b>content</b></code> : <code>String</code> : 
+                                                The visible text content of the option.
+                                            </li>
+                                            <li>
+                                                <code><b>isSelected</b></code> : <code>Boolean | false</code> : 
+                                                Determines if this option is selected by the dropdown currently.
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                Determines if this option is disabled. Disabled options cannot be selected.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SLIDERS/RANGES -->
+                        <section class="section section-open" id="anchor-ranges">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Sliders/Ranges</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        The range object is a native HTMl range input with added CSS and JavaScript capabilities.
+                                    </p>
+                                    <div class="content-code">
+                                        <input type="range" min="1" max="8" step="1" class="input range">
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a range, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice25.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice24.svg">
+                                    </div>
+                                </div>
+
+                                <!-- ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Range</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>value</b></code> : <code>Int</code> : 
+                                                The numerical value of the range.
+                                            </li>
+                                            <li>
+                                                <code><b>minValue</b></code> : <code>Int</code> : 
+                                                The smallest allowed value of the range.
+                                            </li>
+                                            <li>
+                                                <code><b>maxValue</b></code> : <code>Int</code> : 
+                                                The largest allowed value of the range. Must be larger than <code>minValue</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>step</b></code> : <code>Int</code> : 
+                                                The increment by which the value will increase when manipulated.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is disabled.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- STEPPERS -->
+                        <section class="section section-open" id="anchor-steppers">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Steppers</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A stepper is a unique numerical input device that allows a user to use a keyboard or steppers within a clamped range.
+                                        <br> <br>
+                                        In most instances, it is better to use this for purely numerical inputs than a text field.
+                                    </p>
+                                    <div class="content-code content-input">
+                                        <div class="input stepper">
+                                            <input value=8 step=4 min=-20 max="20" type="number">
+                                            <button class="button icon stepper-decrease">
+                                                <span class="material-icons-round">keyboard_arrow_down</span>
+                                            </button>
+                                            <button class="button icon stepper-increase">
+                                                <span class="material-icons-round">keyboard_arrow_up</span>
+                                            </button>
+                                        </div>
+                                        <p class="label">min -20, max 20, step 4</p>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a stepper, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice35.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice34.svg">
+                                    </div>
+                                </div>
+
+                                <!-- ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Range</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>value</b></code> : <code>Int</code> : 
+                                                The numerical value of the input.
+                                            </li>
+                                            <li>
+                                                <code><b>minValue</b></code> : <code>Int</code> : 
+                                                The smallest allowed value of the input.
+                                            </li>
+                                            <li>
+                                                <code><b>maxValue</b></code> : <code>Int</code> : 
+                                                The largest allowed value of the input. Must be larger than <code>minValue</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>step</b></code> : <code>Int</code> : 
+                                                The increment by which the value will increase when manipulated. Any keyboard input will be automatically rounded to the nearest step.
+                                            </li>
+                                            <li>
+                                                <code><b>buttons</b></code> : <code>Array[Ph_Button]</code> : 
+                                                A list containing all the buttons created for this object.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>decrease()</b></code> : 
+                                                Decreases the value of the stepper by a multiple of the step.
+                                            </li>
+                                            <li>
+                                                <code><b>increase()</b></code> : 
+                                                Increases the value of the stepper by a multiple of the step.
+                                            </li>
+                                            <li>
+                                                <code><b>syncInput()</b> : overrideInput | true</code> : 
+                                                Synchronises the internally stored value with what is displayed on the input, overriding either the input or internal value (based on the value of <code>overrideInput</code>). Internal use only; avoid using this.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- TEXT FIELDS -->
+                        <section class="section section-open" id="anchor-texts">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Text Fields</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A text object is a simple yet extensible alphanumerical input. It is built around the native HTMl object, but offers a number of unique addons to improve usability and functionality.
+                                    </p>
+                                    <div class="content-vertical content-input">
+                                        <div class="input text">
+                                            <input type="password" placeholder="Password...">
+                                            <button class="button icon text-clear">
+                                                <span class="material-icons-round">clear</span>
+                                            </button>
+                                        </div>
+                                        <p class="label">Password input with show and remove buttons.</p>
+
+                                        <div class="input text with-chips" data-maxChips="2" data-delimiter=",">
+                                            <input type="text" placeholder="Placeholder...">
+                                            <div class="chip-container">
+                                                <div class="chip-content"></div>
+                                            </div>
+                                            <button class="button icon text-clear">
+                                                <span class="material-icons-round">clear</span>
+                                            </button>
+                                        </div>
+                                        <p class="label">A text input with up to 2 chips. The delimiter is ','</p>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create the password input, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice29.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice28.svg">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    And to create the chip input, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice27.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice26.svg">
+                                    </div>
+                                </div>
+
+                                <!-- TEXT ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Text</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>value</b></code> : <code>String</code> : 
+                                                The alphanumerical value of the input.
+                                            </li>
+                                            <li>
+                                                <code><b>placeholder</b></code> : <code>String</code> : 
+                                                The placeholder text to appear when no value is present. Always trail with ellipsis.
+                                            </li>
+                                            <li>
+                                                <code><b>type</b></code> : <code>String | 'text'</code> : 
+                                                An HTML-compatible type for the input to be. Supported types are <code>'text'</code> and <code>'password'</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>minLength</b></code> : <code>Int | -1</code> : 
+                                                The smallest number of characters allowed.
+                                            </li>
+                                            <li>
+                                                <code><b>maxLength</b></code> : <code>Int | -1</code> : 
+                                                The largest number of characters allowed. Must be larger than <code>minValue</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>chips</b></code> : <code>Array[Ph_Chip]</code> : 
+                                                A list containing all the chips created within this object.
+                                            </li>
+                                            <li>
+                                                <code><b>maxChips</b></code> : <code>Int | -1</code> : 
+                                                The maximum number of chips allowed. Any value below <code>0</code> is considered infinite.
+                                            </li>
+                                            <li>
+                                                <code><b>delimiter</b></code> : <code>String | ','</code> : 
+                                                The character/s required to create a new chip from the value of the text field.
+                                            </li>
+                                            <li>
+                                                <code><b>buttons</b></code> : <code>Array[Ph_TextButton]</code> : 
+                                                A list containing all the buttons created for this object.
+                                            </li>
+                                            <li>
+                                                <code><b>isAllowedChips</b></code> : <code>Boolean | false</code> : 
+                                                Determines whether this text object will support the creation of new chips. Overrides other chip-related values.
+                                            </li>
+                                            <li>
+                                                <code><b>isAllowedAutocomplete</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the browser's native autocomplete/autocorrect features affect the value in the input.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>clear()</b> : object | This, html | This.html, isAllowedChips | Boolean</code> : 
+                                                Clears the value and chips of the object, if applicable.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- TEXTBUTTON ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_TextButton</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>icon</b></code> : <code>String</code> : 
+                                                The Material Icons-specified icon content for the button.
+                                            </li>
+                                            <li>
+                                                <code><b>event</b></code> : <code>Event</code> : 
+                                                The JavaScript event to call upon activating the button. This can be set here or by accessing the html content manually later for more precision.
+                                            </li>
+                                            <li>
+                                                <code><b>isLink</b></code> : <code>Boolean | false</code> : 
+                                                Reformats the button to be created with an a element, thus allowing it to easily link to other pages or external sites. By default, a button is created with the button element.
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                If set to true, the button will be created in a disabled state, disallowing any interactions and setting the opacity to 50%.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- CHIP ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Chip</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>parentID</b></code> : <code>Int</code> : 
+                                                The integer section of the parent object's ID.
+                                            </li>
+                                            <li>
+                                                <code><b>content</b></code> : <code>String</code> : 
+                                                The alphanumerical content of the chip.
+                                            </li>
+                                            <li>
+                                                <code><b>buttonContent</b></code> : <code>String | 'close'</code> : 
+                                                The Material Icons-specified button content of the small button to the right of the chip's content.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>remove()</b></code> : 
+                                                Deletes this chip.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- TEXT AREAS -->
+                        <section class="section section-open" id="anchor-textareas">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Text Areas</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A very simple extension to the native HTML textarea object.
+                                    </p>
+                                    <div class="content-vertical content-input">
+                                        <div class="input textarea">
+                                            <textarea placeholder="Placeholder..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a textarea, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice31.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice30.svg">
+                                    </div>
+                                </div>
+
+                                <!-- ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Textarea</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>value</b></code> : <code>String</code> : 
+                                                The alphanumerical value of the input.
+                                            </li>
+                                            <li>
+                                                <code><b>placeholder</b></code> : <code>String</code> : 
+                                                The placeholder text to appear when no value is present. Always trail with ellipsis.
+                                            </li>
+                                            <li>
+                                                <code><b>minLength</b></code> : <code>Int | -1</code> : 
+                                                The smallest number of characters allowed.
+                                            </li>
+                                            <li>
+                                                <code><b>maxLength</b></code> : <code>Int | -1</code> : 
+                                                The largest number of characters allowed. Must be larger than <code>minValue</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>isAllowedAutocomplete</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the browser's native autocomplete/autocorrect features affect the value in the input.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- FILE UPLOADS -->
+                        <section class="section section-open" id="anchor-fileuploads">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>File Uploads</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A significant improvement to the native HTML file upload that allows for drag-and-drop file uploads.
+                                    </p>
+                                    <div class="content-vertical content-input">
+                                        <label class="input file-upload" data-accepts="image/jpeg, image/png">
+                                            <input type="file">
+                                            <span class="material-icons-round">image</span>
+                                            <label>
+                                                Upload a File...
+                                            </label>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a file upload, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice33.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice32.svg">
+                                    </div>
+                                </div>
+
+                                <!-- ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_FileUpload</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>files</b></code> : <code>FileList</code> : 
+                                                The file content of the input, directly reflecting that of a regular file input.
+                                            </li>
+                                            <li>
+                                                <code><b>acceptsTypes</b></code> : <code>Array[String]</code> : 
+                                                The HTML-compatible specification of accepted file types.
+                                            </li>
+                                            <li>
+                                                <code><b>icon</b></code> : <code>String | 'image'</code> : 
+                                                The Material Icons-specified content of the central icon.
+                                            </li>
+                                            <li>
+                                                <code><b>label</b></code> : <code>String | 'Upload a File...'</code> : 
+                                                The 'placeholder' content of the input while in a neutral state. Always trail with ellipsis.
+                                            </li>
+                                            <li>
+                                                <code><b>hoverLabel</b></code> : <code>String | 'Drop Files Here...'</code> : 
+                                                The text to display when a file is hovering over the input. Always trail with ellipsis.
+                                            </li>
+                                            <li>
+                                                <code><b>isHighlighted</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is higlighted (marked with a secondary-colored border).
+                                            </li>
+                                            <li>
+                                                <code><b>isDisabled</b></code> : <code>Boolean | false</code> : 
+                                                Determines if the object is disabled.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>dragOverHandler()</b> : ev | Event</code> : 
+                                                Handles the behaviour of the input upon a file hovering above it. For internal use only.
+                                            </li>
+                                            <li>
+                                                <code><b>dragLeaveHandler()</b> : ev | Event</code> : 
+                                                Handles the behaviour of the input upon a file no longer hovering above it. For internal use only.
+                                            </li>
+                                            <li>
+                                                <code><b>dropHandler()</b> : ev | Event</code> : 
+                                                Handles the behaviour of the input upon a file being dropped on it. For internal use only.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- CHECKBOXES -->
+                        <section class="section section-open" id="anchor-checks">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Checkboxes & Radios</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A complete rewrite of the mediocre native HTML checks to improve simplicity and usability.
+                                        <br> <br>
+                                        A the check system displayed here relies on the check itself, which contains an input and label, and the check container, which is used to sort the checks. In the case of the radio checks, the container provides the constraint for the radio attribute - only one check in a container may be selected at once.
+                                        <br> <br>
+                                        It is possible to use the checks without their parenting container, however in which case avoid using the radio check as it may give mixed usability signals to a user.
+                                    </p>
+                                    <div class="content-vertical content-input">
+                                        <div class="input check-container">
+                                            <label class="checkbox">
+                                                <div class="check"><div></div></div>
+                                                <label>Label</label>
+                                            </label>
+                                            <label class="checkbox">
+                                                <div class="check"><div></div></div>
+                                                <label>Label</label>
+                                            </label>
+                                            <label class="checkbox">
+                                                <div class="check"><div></div></div>
+                                                <label>Label</label>
+                                            </label>
+                                        </div>
+                                        <p class="label">A regular check container.</p>
+
+                                        <div class="input check-container">
+                                            <label class="checkbox radio checked">
+                                                <div class="check"><div></div></div>
+                                                <label>Label 1</label>
+                                            </label>
+                                            <label class="checkbox radio">
+                                                <div class="check"><div></div></div>
+                                                <label>Label 2</label>
+                                            </label>
+                                            <label class="checkbox radio">
+                                                <div class="check"><div></div></div>
+                                                <label>Label 3</label>
+                                            </label>
+                                        </div>
+                                        <p class="label">A radio check container.</p>
+                                    </div>
+                                </div>
+
+                                <div class="sep horizontal"></div>
+                                <p>
+                                    To create a regular check container, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice39.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice38.svg">
+                                    </div>
+                                </div>
+
+                                <p>
+                                    To create a radio check container, use:
+                                </p>
+                                <div class="content-horizontal">
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice37.svg">
+                                    </div>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice36.svg">
+                                    </div>
+                                </div>
+
+                                <!-- CHECK ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_Check</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>parentID</b></code> : <code>Int</code> : 
+                                                The Phosphorus-controlled identifier of the check's parent <code>Ph_CheckContainer</code>, if applicable.
+                                            </li>
+                                            <li>
+                                                <code><b>label</b></code> : <code>String'</code> : 
+                                                The text content to be displayed alongside the interactible element of the input.
+                                            </li>
+                                            <li>
+                                                <code><b>isChecked</b></code> : <code>Boolean | false</code> : 
+                                                Determines if this input is active/checked.
+                                            </li>
+                                            <li>
+                                                <code><b>isRadio</b></code> : <code>Boolean | false</code> : 
+                                                Determines if this check is the radio variant.
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                            <li>
+                                                <code><b>toggle()</b></code> : 
+                                                Toggles whether this input is checked. In the case of a radio input, it will uncheck any other radio inputs in the same check container.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- CHECK CONTAINER ATTRIBUTES -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Ph_CheckContainer</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+
+                                        <h4>Attributes</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>id</b></code> : <code>Int</code> : 
+                                                Phosphorus-controlled identifier.
+                                            </li>
+                                            <li>
+                                                <code><b>selectedChecks</b></code> : <code>Array[Ph_Check]</code> : 
+                                                A list of all selected checks within this container's jurisdiction. In the case of a radio container, this will always have a length of <code>1</code>.
+                                            </li>
+                                            <li>
+                                                <code><b>checks</b></code> : <code>Array[Ph_Check]</code> : 
+                                                A list of all checks within this container's jurisdiction. This includes active and inactive checks
+                                            </li>
+                                            <li>
+                                                <code><b>parent</b></code> : <code>Element</code> : 
+                                                The parent element of the object.
+                                            </li>
+                                            <li>
+                                                <code><b>html</b></code> : <code>Element</code> : 
+                                                The native HTML code for the object.
+                                            </li>
+                                        </ul>
+
+                                        <h4>Functions</h4>
+                                        <ul>
+                                            <li>
+                                                <code><b>initialise()</b></code> : 
+                                                Initialises the object. Do not call.
+                                            </li>
+                                            <li>
+                                                <code><b>instantiate()</b></code> : 
+                                                Instantiates the object. Call to create a new element.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- UNIVERSAL LAYOUT COMPONENTS -->
+                <section class="section section-open" id="anchor-universal-layout-components">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Universal Layout Components [UNFINISHED]</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            The components form the underlying code of both Phosphorus versions. They make heavy use of the CSS <code>flex</code> feature, so it's worth becoming acquainted with it before diving too deep here.
+                        </p>
+
+                        <!-- CONTENT -->
+                        <section class="section section-open" id="anchor-content-tag">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Content</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Phosphorus contains many <code>.content</code> tags that can be used to manipulate the layout of elements they contain. The two most widely used are <code>.content-horizontal</code> and <code>.content-vertical</code>.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice40.svg">
+                                    </div>
+                                </div>
+
+                                <!-- HORIZONTAL & VERTICAL -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Horizontal & vertical content</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <p>
+                                            As the name would suggest, <code>.content-horizontal</code> is used to display content across in a row, while <code>.content-vertical</code> is used to display content in a column.
+                                            <br> <br>
+                                            An important thing to note is that <code>.content-horizontal</code> will automatically transform to a vertical layout (identically to <code>.content-vertical</code>) on mobile devices (less than 1000px wide) unless the tag <code>.except</code> is appended, in which case it will retain its usual behaviour.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- INPUT -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Input content</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <p>
+                                            Commonly used in conjunction with <code>.content-vertical</code>, the <code>.content-input</code> tag contains slight modifications to accommodate input elements.
+                                            <br> <br>
+                                            A paragraph tagged with <code>.label</code> can also be used within a <code>.content-input</code> container to create a smaller, italicised paragraph designed to be used as assistance for an input element.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- CARDS -->
+                                <div class="container">
+                                    <header>
+                                        <h3>Card content</h3>
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <p>
+                                            As the name suggests, the <code>.content-cards</code> attribute is designed to be used with <code>.content-horizontal</code> to store horizontally-scrolling cards.
+                                            <br> <br>
+                                            This does not require the <code>.except</code> tag as it will retain its behaviour regardless of device breakpoint.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SEPARATORS -->
+                        <section class="section section-open" id="anchor-separators">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Separators</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Separators are simply vertical or horizontal lines created to visually divide sections of content. They're created by invoking the <code>.sep</code> tag on a <code>div</code> element. To create the horizontal or vertical versions, use <code>.sep.horizontal</code> or <code>.sep.vertical</code>, respectively.
+                                        <br> <br>
+                                        Appending the <code>.alt</code> tag will change the color to the pre-defined <code>secondary</code> color.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice40.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- APP LAYOUT COMPONENTS -->
+                <section class="section section-open" id="anchor-app-layout-components">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>App Layout Components</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <p>
+                            These layout components are exclusive to the App version of Phosphorus, and may interfere with those of the Web version.
+                        </p>
+
+                        <!-- NAV RAILS -->
+                        <section class="section section-open" id="anchor-app-nav-rails">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Navigation Rails</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Navigations are a vertical arrangement method for linking to inter-page content. They're designed to house icon buttons linking to other pages or applications.
+                                        <br> <br>
+                                        Do not use this to organise regular buttons or internal content links, instead use a sidebar.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice40.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SIDEBARS -->
+                        <section class="section section-open" id="anchor-app-sidebars">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Sidebars</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Sidebars are used to organise page-specific navigational content, such as an index or list. They may house an anchor-linked button group or a search menu that links to content relying on this page's template. 
+                                        <br> <br>
+                                        Content here should not link to other pages or applications, instead use the navigation rail.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice41.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- MAIN CONTENT -->
+                        <section class="section section-open" id="anchor-app-main-content">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Main Content</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        This tag is used to specify content or a content template in the page. It should be placed within the <code>main</code> element and after the nav rail and sidebar.
+                                        <br> <br>
+                                        Everything that scrolls regularly should be stored within this element. This may be a template of content, or pre-filled static content. To navigate this content, use a sidebar or nav bar.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/inputs/slice24.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- NAV -->
+                        <section class="section section-open" id="anchor-app-nav">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Content Navigation Bar</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        A horizontal nav bar is used to access functions specific to the currently displayed content. It should be stored within the <code>content</code> section of the page as it may change in functionality dramatically in different scenarios.
+                                        <br> <br>
+                                        This element in particular will interfere with the Web version of Phosphorus as the <code>nav</code> tag is used in both to very different results.
+                                        <br> <br>
+                                        Avoid using this to directly link to content in another section or page. 
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice45.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- SECTIONS -->
+                        <section class="section section-open" id="anchor-app-sections">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Sections</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Sections offer a collapsible method of separating content that promotes a linear hierarchy. Fundamentally, it is a header with a separating line and button to toggle its collapsed or expanded state. 
+                                        <br> <br> 
+                                        It allows the separation of content while providing an easy way to collapse content and bring to focus what is important on a screen. When used in conjunction with anchors it can become a powerful tool for organising and navigating a page's content.
+                                        <br> <br>
+                                        It's also worth noting that sections can be stacked to create further hierarchy, but for once-off or smaller blocks of content, consider a container. Containers have essentially the same functionality, but are used to hide specific details while retaining some function or information for a user.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice44.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- CONTAINERS -->
+                        <section class="section section-open" id="anchor-app-containers">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Containers</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Containers are functionally the same as sections, however are visually elevated from their surroundings by use of a border and altered background.
+                                        <br> <br>
+                                        Unlike a section, the header content of a container can contain content other than a header; it may contain inputs, radios, etc.
+                                        <br> <br>
+                                        By default, a container should be collapsed. The content it encapsulates should not be integral to the experience of the page, but should offer a user more information or options should they want it. If the content of a container is essential for a user's experience, consider using a section or redesiging the page.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice42.svg">
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <header>
+                                        <label class="checkbox">
+                                            <div class="check"><div></div></div>
+                                            <label>Checkbox label</label>
+                                        </label>
+
+                                        <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                    </header>
+                                    <div class="container-content">
+                                        <div class="input text">
+                                            <input type="text" maxlength="50" placeholder="Input placeholder...">
+                                            <button class="button icon text-clear">
+                                                <span class="material-icons-round">clear</span>
+                                            </button>
+                                        </div>
+                                        <p>
+                                            This container contains an input as the header, as well as nested inputs and text as the collapsible content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- CARDS -->
+                        <section class="section section-open" id="anchor-app-cards">
+                            <header>
+                                <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                <h2>Cards</h2>
+                                <div class="sep horizontal"></div>
+                            </header>
+                            <div class="section-content">
+                                <div class="content-horizontal">
+                                    <p>
+                                        Cards are a visually interesting way for a user to compare content or make a selection of similar items. A card container may contain cards relating to complex items in a list, wherein it would offer more detail than a list button would.
+                                        <br> <br>
+                                        Cards are always displayed scrolling horizontally, and as such should take up the entirety of the page's main content. Try to have at least 3 cards displaying at once to take advantage of their usefulness in offering a user a comparison of content.
+                                        <br> <br>
+                                        Cards may also contain nested inputs, such as buttons, however avoid complex interactions such as text or range inputs, instead opting to open in another page or a modal.
+                                    </p>
+                                    <div class="content-vertical content-code">
+                                        <img class="code" src="./content/media/code/app_layout/slice43.svg">
+                                    </div>
+                                </div>
+
+                                <div class="content-horizontal content-cards">
+
+                                    <div class="card">
+                                        <img src="./content/media/sample_media_1.png">
+                                        <div class="media-buttons">
+                                            <span class="material-icons-round" style="color: white;">verified</span>
+                                            <button class="button icon" style="color: white;">
+                                                <span class="material-icons-round">bookmark</span>
+                                            </button>
+                                        </div>
+                                        <h3>Card Title</h3>
+                                        <p>A short description of this card's content</p>
+                                        <div class="sep horizontal"></div>
+                                        <div class="chip-container">
+                                            <div class="chip-content">
+                                                <div class="chip">Chips</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./content/media/sample_media_1.png">
+                                        <div class="media-buttons">
+                                            <span class="material-icons-round" style="color: white;">verified</span>
+                                            <button class="button icon" style="color: white;">
+                                                <span class="material-icons-round">bookmark</span>
+                                            </button>
+                                        </div>
+                                        <h3>Card Title</h3>
+                                        <p>A short description of this card's content</p>
+                                        <div class="sep horizontal"></div>
+                                        <div class="chip-container">
+                                            <div class="chip-content">
+                                                <div class="chip">Chips</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./content/media/sample_media_1.png">
+                                        <div class="media-buttons">
+                                            <span class="material-icons-round" style="color: white;">verified</span>
+                                            <button class="button icon" style="color: white;">
+                                                <span class="material-icons-round">bookmark</span>
+                                            </button>
+                                        </div>
+                                        <h3>Card Title</h3>
+                                        <p>A short description of this card's content</p>
+                                        <div class="sep horizontal"></div>
+                                        <div class="chip-container">
+                                            <div class="chip-content">
+                                                <div class="chip">Chips</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

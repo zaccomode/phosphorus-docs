@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Browser -->
+        <title>Home/Testbench | Phosphorus</title>
+
+        <!-- JS -->
+        <script src="./js/global.js"></script>
+
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        
+        <!-- PHOSPHORUS -->
+        <link rel="stylesheet" href="./phosphorus/framework.css">
+        <link rel="stylesheet" href="./phosphorus/app_framework.css">
+        <link rel="stylesheet" href="./phosphorus/dependencies.css">
+
+        <script src="./phosphorus/framework.js"></script>
+    </head>
+
+    <body onload="loadFramework()">
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- TEST DRAWER OVERLAY -->
+            <div class="drawer-overlay">
+                <div class="content-horizontal except">
+                    <button class="button icon drawer-close"><span class="material-icons-round">first_page</span></button>
+                    <button class="button icon secondary outlined"><span class="material-icons-round">add</span></button>
+                </div>
+                <div class="search-results">
+                    <h1>nice</h1>
+                </div>
+            </div>
+
+            <!-- NAV RAIL -->
+            <aside class="nav-rail">
+                <button class="button icon outlined"><span class="material-icons-round">fitness_center</span></button>
+                <button class="button icon" onclick="createAlert();"><span class="material-icons-round">directions_run</span></button>
+                <button class="button icon" onclick="createModal();"><span class="material-icons-round">visibility</span></button>
+
+                <div class="sep horizontal"></div>
+
+                <button class="button icon"><span class="material-icons-round">settings</span></button>
+            </aside>
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="content-horizontal">
+                    <div class="input text">
+                        <input type="text" maxlength="50" placeholder="Search...">
+                        <button class="button icon text-clear">
+                            <span class="material-icons-round">clear</span>
+                        </button>
+                    </div>
+                    <button class="button icon secondary outlined">
+                        <span class="material-icons-round">search</span>
+                    </button>
+                </div>
+    
+                <div class="content-vertical" id="search-results">
+                    <!-- Example ListButton -->
+                    <button class="button outlined list">
+                        <span class="material-icons-round">verified_user</span>
+                        <div class="content-vertical">
+                            <h4>List Button</h4>
+                            <p>Result #1</p>
+                        </div>
+                        <span class="material-icons-round">keyboard_arrow_right</span>
+                    </button>
+                </div>
+    
+                <button class="button secondary outlined">Action Button</button>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <div class="content">
+
+                <!-- NAV -->
+                <nav class="nav">
+                    <h1>Nav Header</h1>
+                    
+                    <div class="content-horizontal except">
+                        
+                        <div class="content-horizontal except become-mobile-sheet">
+                            <button data-alt='Search' class="button tablet-only icon" onclick="openDrawer()"><span class="material-icons-round">search</span></button>
+                            <span class="sep vertical"></span>
+                            <button data-alt='Cancel' class="button icon outlined" id="cancel-button" disabled><span class="material-icons-round">close</span></button>
+                            <button data-alt='Save' class="button outlined secondary icon" id="save-button" onclick="objectInteraction()"><span class="material-icons-round">save</span></button>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- BUTTON SECTION -->
+                <section class="section">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Buttons</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <div class="content-horizontal">
+                            <button class="button icon"><span class="material-icons-round">close</span></button>
+                            <button class="button with-icon"><span class="material-icons-round">close</span>Leading Icon</button>
+                            <button class="button">Button</button>
+                            <button class="button outlined">Button</button>
+                            <button class="button contained">Button</button>
+                        </div>
+                        <div class="content-horizontal">
+                            <button class="button secondary icon"><span class="material-icons-round">close</span></button>
+                            <button class="button secondary">Button</button>
+                            <button class="button secondary outlined">Button</button>
+                            <button class="button secondary contained">Button</button>
+                        </div>
+                        <div class="content-horizontal" style="background-color: var(--tertiary);">
+                            <button class="button tertiary icon"><span class="material-icons-round">close</span></button>
+                            <button class="button tertiary">Button</button>
+                            <button class="button tertiary outlined">Button</button>
+                            <button class="button tertiary contained">Button</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INPUT SECTION -->
+                <section class="section section-open">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Inputs</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <!-- Dropdown & Range/Slider-->
+                        <div class="content-horizontal" id="test-parent">
+                            <div class="content-vertical content-input">
+                                <h3>Dropdown/Select</h3>
+                                <div class="input select" id="select-1">
+                                    <span>Dropdown Placeholder...</span>
+                                    <span class="material-icons-round">keyboard_arrow_right</span>
+                                    <div>
+                                        <option disabled value="1">Option1</option>
+                                        <option value="2" class="selected">Option2</option>
+                                        <option value="3">Option3</option>
+                                    </div>
+                                </div>
+                                <p class="label">Dropdown label.</p>
+                            </div>
+        
+                            <div class="content-vertical content-input">
+                                <h3>Slider/Range</h3>
+                                <input type="range" min="1" max="8" step="1" id="editor-set-count" class="input range">
+                                <p class="label">
+                                    label
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Text Fields -->
+                        <div class="content-horizontal">
+                            <div class="content-vertical content-input">
+                                <h3>Text Field</h3>
+                                <div class="input text highlight" oninput="updateWordCount()" id="text-1">
+                                    <input type="password" maxlength="50" placeholder="Input placeholder...">
+                                    <button class="button icon text-clear">
+                                        <span class="material-icons-round">clear</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="content-horizontal except">
+                                    <p class="label">
+                                        label
+                                    </p>
+                                    <p class="label" id="text-word-count" style="text-align: right;">
+                                        0/20
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content-vertical content-input">
+                                <h3>Text Field (With Chips)</h3>
+                                <div class="input text with-chips" data-maxChips="-2" data-delimiter=",">
+                                    <input type="text" placeholder="Input placeholder...">
+                                    <div class="chip-container">
+                                        <div class="chip-content"></div>
+                                    </div>
+                                    <button class="button icon text-clear">
+                                        <span class="material-icons-round">clear</span>
+                                    </button>
+                                </div>
+                                <p class="label">
+                                    Delimiter: ',' (comma)
+                                </p>
+                            </div>
+        
+                            
+                        </div>
+
+                        <!-- Textarea & File Upload -->
+                        <div class="content-horizontal">
+                            <div class="content-vertical content-input">
+                                <h3>Text Area</h3>
+                                <div class="input textarea" id="textarea-1">
+                                    <textarea placeholder="Input placeholder..."></textarea>
+                                </div>
+                                
+                                <div class="content-horizontal">
+                                    <p class="label">
+                                        label
+                                    </p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="content-vertical content-input">
+                                <h3>File Upload</h3>
+                                <label class="input file-upload" data-accepts="image/jpeg, image/png">
+                                    <input disabled type="file">
+                                    <span class="material-icons-round">image</span>
+                                    <label>
+                                        Upload a File...
+                                    </label>
+                                </label>
+
+                                <p class="label">
+                                    Label
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Checks -->
+                        <div class="content-horizontal">
+                            <!-- Check container (regular) -->
+                            <div class="content-vertical content-input">
+                                <h3>Checks (regular)</h3>
+                                <div class="input check-container">
+                                    <label class="checkbox">
+                                        <div class="check"><div></div></div>
+                                        <label>Label</label>
+                                    </label>
+                                    <label class="checkbox">
+                                        <div class="check"><div></div></div>
+                                        <label>Label</label>
+                                    </label>
+                                    <label class="checkbox">
+                                        <div class="check"><div></div></div>
+                                        <label>Label</label>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Check container (radio) -->
+                            <div class="content-vertical content-input">
+                                <h3>Checks (radio)</h3>
+                                <div class="input check-container">
+                                    <label class="checkbox radio checked">
+                                        <div class="check"><div></div></div>
+                                        <label>Label 1</label>
+                                    </label>
+                                    <label class="checkbox radio">
+                                        <div class="check"><div></div></div>
+                                        <label>Label 2</label>
+                                    </label>
+                                    <label class="checkbox radio">
+                                        <div class="check"><div></div></div>
+                                        <label>Label 3</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Steppers -->
+                        <div class="content-horizontal">
+                            <div class="content-vertical content-input">
+                                <h3>Stepper</h3>
+                                <div class="input stepper">
+                                    <input value=8 step=4 min=-20 max="20" type="number" placeholder="Input placeholder...">
+                                    <button class="button icon stepper-decrease">
+                                        <span class="material-icons-round">keyboard_arrow_down</span>
+                                    </button>
+                                    <button class="button icon stepper-increase">
+                                        <span class="material-icons-round">keyboard_arrow_up</span>
+                                    </button>
+                                </div>
+                                <p class="label">min -20, max 20, step 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTAINER SECTION -->
+                <section class="section section-open">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Containers</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        <div class="content-vertical content-input">
+
+                            <!-- Regular Container -->
+                            <div class="container container-open">
+                                <header>
+                                    <h3>Nice</h3>
+                                    <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                </header>
+                                <div class="container-content">
+                                    <p>This is a paragraph</p>
+                                </div>
+                            </div>
+                            <p class="label">Label.</p>
+                            
+                            <!-- Input Container -->
+                            <div class="container">
+                                <header>
+                                    <label class="checkbox">
+                                        <div class="check"><div></div></div>
+                                        <label>Label</label>
+                                    </label>
+
+                                    <button class="button icon container-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                                </header>
+                                <div class="container-content">
+                                    <div class="input text">
+                                        <input type="text" maxlength="50" placeholder="Input placeholder...">
+                                        <button class="button icon text-clear">
+                                            <span class="material-icons-round">clear</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CARD SECTION -->
+                <section class="section">
+                    <header>
+                        <button class="button icon section-button"><span class="material-icons-round">keyboard_arrow_right</span></button>
+                        <h2>Cards</h2>
+                        <div class="sep horizontal"></div>
+                    </header>
+                    <div class="section-content">
+                        
+                         <h3>Scrollable Cards</h3>
+
+                        <div class="content-horizontal content-cards">
+
+                            <div class="card">
+                                <img src="./content/media/sample_media_1.png">
+                                <div class="media-buttons">
+                                    <span class="material-icons-round" style="color: white;">verified</span>
+                                    <button class="button icon" style="color: white;">
+                                        <span class="material-icons-round">bookmark</span>
+                                    </button>
+                                </div>
+                                <h3>Kill-Ups</h3>
+                                <p>A varation of the OG pull-ups that kill!</p>
+                                <div class="sep horizontal"></div>
+                                <div class="chip-container">
+                                    <div class="chip-content">
+                                        <div class="chip">Core</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./content/media/sample_media_1.png">
+                                <div class="media-buttons">
+                                    <span class="material-icons-round" style="color: white;">verified</span>
+                                    <button class="button icon" style="color: white;">
+                                        <span class="material-icons-round">bookmark</span>
+                                    </button>
+                                </div>
+                                <h3>Kill-Ups</h3>
+                                <p>A varation of the OG pull-ups that kill!</p>
+                                <div class="sep horizontal"></div>
+                                <div class="chip-container">
+                                    <div class="chip-content">
+                                        <div class="chip">Core</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./content/media/sample_media_1.png">
+                                <div class="media-buttons">
+                                    <span class="material-icons-round" style="color: white;">verified</span>
+                                    <button class="button icon" style="color: white;">
+                                        <span class="material-icons-round">bookmark</span>
+                                    </button>
+                                </div>
+                                <h3>Kill-Ups</h3>
+                                <p>A varation of the OG pull-ups that kill!</p>
+                                <div class="sep horizontal"></div>
+                                <div class="chip-container">
+                                    <div class="chip-content">
+                                        <div class="chip">Core</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img src="./content/media/sample_media_1.png">
+                                <div class="media-buttons">
+                                    <span class="material-icons-round" style="color: white;">verified</span>
+                                    <button class="button icon" style="color: white;">
+                                        <span class="material-icons-round">bookmark</span>
+                                    </button>
+                                </div>
+                                <h3>Kill-Ups</h3>
+                                <p>A varation of the OG pull-ups that kill!</p>
+                                <div class="sep horizontal"></div>
+                                <div class="chip-container">
+                                    <div class="chip-content">
+                                        <div class="chip">Core</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

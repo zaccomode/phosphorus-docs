@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 652 382" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-3134,-1134)">
+        <g transform="matrix(0.72,0,0,3,3080,0)">
+            <g transform="matrix(1,0,0,1,0,360)">
+                <g transform="matrix(1.38889,-0,-0,0.333333,75,18)">
+                    <use xlink:href="#_Image1" x="3.894" y="3.895" width="645.221px" height="375.225px" transform="matrix(0.998794,0,0,0.997939,0,0)"/>
+                </g>
+                <g transform="matrix(2.08333,0,0,0.6875,-305.556,-110.833)">
+                    <path d="M600,202.424C600,201.085 598.508,200 596.667,200C560.394,200 239.606,200 203.333,200C201.492,200 200,201.085 200,202.424C200,220.89 200,339.11 200,357.576C200,358.915 201.492,360 203.333,360C239.606,360 560.394,360 596.667,360C598.508,360 600,358.915 600,357.576C600,339.11 600,220.89 600,202.424Z" style="fill:rgb(27,27,41);"/>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,26.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">1</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,46.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">2</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,56.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">3</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,66.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">4</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,76.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">5</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,86.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">6</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,96.6667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">7</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,106.667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">8</text>
+                </g>
+                <g transform="matrix(1.38889,0,2.55941e-32,0.333333,-2111.11,116.667)">
+                    <text x="1625px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;fill-opacity:0.2;">9</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.78244e-31,0.333333,-2069.44,26.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1670px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">class</text>
+                    <text x="1720px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;input text with-chips&quot;</text>
+                    <text x="1970px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">data-maxChips</text>
+                    <text x="2100px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="2110px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;2&quot;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.78244e-31,0.333333,-2069.44,116.667)">
+                    <g transform="matrix(16.6667,0,0,16.6667,1630,36.0833)">
+                        <path d="M0.04,0.11L0.083,-0.003L-0.47,-0.28L-0.47,-0.38L-0.04,-0.595L-0.04,-0.505L-0.35,-0.354C-0.361,-0.348 -0.372,-0.343 -0.381,-0.339C-0.39,-0.335 -0.397,-0.332 -0.402,-0.331C-0.397,-0.33 -0.39,-0.327 -0.381,-0.323C-0.372,-0.319 -0.361,-0.314 -0.35,-0.308L0.111,-0.078L0.395,-0.83L0.49,-0.83L0.135,0.11L0.04,0.11Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1640px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1670px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,46.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">input</text>
+                    <text x="1690px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">type</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1740px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;text&quot;</text>
+                    <text x="1810px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">placeholder</text>
+                    <text x="1920px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <g transform="matrix(16.6667,0,0,16.6667,2070,36.0833)">
+                        <path d="M-0.798,0.01C-0.823,0.01 -0.844,0.003 -0.859,-0.012C-0.873,-0.027 -0.881,-0.046 -0.881,-0.071C-0.881,-0.097 -0.873,-0.118 -0.859,-0.133C-0.844,-0.148 -0.823,-0.156 -0.798,-0.156C-0.773,-0.156 -0.753,-0.148 -0.738,-0.133C-0.723,-0.118 -0.715,-0.097 -0.715,-0.071C-0.715,-0.046 -0.723,-0.027 -0.738,-0.012C-0.753,0.003 -0.773,0.01 -0.798,0.01ZM-0.299,0.01C-0.324,0.01 -0.345,0.003 -0.36,-0.012C-0.375,-0.027 -0.382,-0.046 -0.382,-0.071C-0.382,-0.097 -0.375,-0.118 -0.36,-0.133C-0.345,-0.148 -0.324,-0.156 -0.299,-0.156C-0.274,-0.156 -0.254,-0.148 -0.239,-0.133C-0.224,-0.118 -0.216,-0.097 -0.216,-0.071C-0.216,-0.046 -0.224,-0.027 -0.239,-0.012C-0.254,0.003 -0.274,0.01 -0.299,0.01ZM0.2,0.01C0.175,0.01 0.155,0.003 0.14,-0.012C0.125,-0.027 0.117,-0.046 0.117,-0.071C0.117,-0.097 0.125,-0.118 0.14,-0.133C0.155,-0.148 0.175,-0.156 0.2,-0.156C0.225,-0.156 0.246,-0.148 0.261,-0.133C0.276,-0.118 0.283,-0.097 0.283,-0.071C0.283,-0.046 0.276,-0.027 0.261,-0.012C0.246,0.003 0.225,0.01 0.2,0.01Z" style="fill:rgb(112,133,193);fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1930px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;Placeholder<tspan x="2080px " y="36.083px ">&quot;</tspan></text>
+                    <text x="2090px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,56.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1670px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">class</text>
+                    <text x="1720px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;chip-container&quot;</text>
+                    <text x="1890px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,76.6667)">
+                    <g transform="matrix(16.6667,0,0,16.6667,1630,36.0833)">
+                        <path d="M0.04,0.11L0.083,-0.003L-0.47,-0.28L-0.47,-0.38L-0.04,-0.595L-0.04,-0.505L-0.35,-0.354C-0.361,-0.348 -0.372,-0.343 -0.381,-0.339C-0.39,-0.335 -0.397,-0.332 -0.402,-0.331C-0.397,-0.33 -0.39,-0.327 -0.381,-0.323C-0.372,-0.319 -0.361,-0.314 -0.35,-0.308L0.111,-0.078L0.395,-0.83L0.49,-0.83L0.135,0.11L0.04,0.11Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1640px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1670px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.27056e-31,0.333333,-2013.89,66.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1670px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">class</text>
+                    <text x="1720px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;chip-content&quot;</text>
+                    <g transform="matrix(16.6667,0,0,16.6667,1890,36.0833)">
+                        <path d="M0.04,0.11L0.083,-0.003L-0.47,-0.28L-0.47,-0.38L-0.04,-0.595L-0.04,-0.505L-0.35,-0.354C-0.361,-0.348 -0.372,-0.343 -0.381,-0.339C-0.39,-0.335 -0.397,-0.332 -0.402,-0.331C-0.397,-0.33 -0.39,-0.327 -0.381,-0.323C-0.372,-0.319 -0.361,-0.314 -0.35,-0.308L0.111,-0.078L0.395,-0.83L0.49,-0.83L0.135,0.11L0.04,0.11Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1870px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                    <text x="1900px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">div</text>
+                    <text x="1930px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,36.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">data-delimiter</text>
+                    <text x="1760px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1770px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;,&quot;</text>
+                    <text x="1800px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,86.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">button</text>
+                    <text x="1700px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">class</text>
+                    <text x="1750px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1760px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;button icon text-clear&quot;</text>
+                    <text x="2000px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.5265e-31,0.333333,-2041.67,106.667)">
+                    <g transform="matrix(16.6667,0,0,16.6667,1630,36.0833)">
+                        <path d="M0.04,0.11L0.083,-0.003L-0.47,-0.28L-0.47,-0.38L-0.04,-0.595L-0.04,-0.505L-0.35,-0.354C-0.361,-0.348 -0.372,-0.343 -0.381,-0.339C-0.39,-0.335 -0.397,-0.332 -0.402,-0.331C-0.397,-0.33 -0.39,-0.327 -0.381,-0.323C-0.372,-0.319 -0.361,-0.314 -0.35,-0.308L0.111,-0.078L0.395,-0.83L0.49,-0.83L0.135,0.11L0.04,0.11Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1640px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">button</text>
+                    <text x="1700px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+                <g transform="matrix(1.38889,0,6.27056e-31,0.333333,-2013.89,96.6667)">
+                    <text x="1620px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&lt;</text>
+                    <text x="1630px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">span</text>
+                    <text x="1680px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(77,103,179);">class</text>
+                    <text x="1730px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">=</text>
+                    <text x="1740px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(112,133,193);">&quot;material-icons-round&quot;</text>
+                    <g transform="matrix(16.6667,0,0,16.6667,2030,36.0833)">
+                        <path d="M0.04,0.11L0.083,-0.003L-0.47,-0.28L-0.47,-0.38L-0.04,-0.595L-0.04,-0.505L-0.35,-0.354C-0.361,-0.348 -0.372,-0.343 -0.381,-0.339C-0.39,-0.335 -0.397,-0.332 -0.402,-0.331C-0.397,-0.33 -0.39,-0.327 -0.381,-0.323C-0.372,-0.319 -0.361,-0.314 -0.35,-0.308L0.111,-0.078L0.395,-0.83L0.49,-0.83L0.135,0.11L0.04,0.11Z" style="fill:white;fill-rule:nonzero;"/>
+                    </g>
+                    <text x="1960px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;clear</text>
+                    <text x="2040px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:rgb(255,70,86);">span</text>
+                    <text x="2080px" y="36.083px" style="font-family:'JetBrainsMono-Regular', 'JetBrains Mono', monospace;font-size:16.667px;fill:white;">&gt;</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="646px" height="376px" xlink:href="data:image/png;base64,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AAAKYQgAQBJhCABAIQwBAEgiDAEAKIQhAABJhCEAAIUwBAAgiTAEAKAQhgAAJBGGAAAUwhAAgCTCEACAQhgCAJBEGAIAUAhDAACSCEMAAAphCABAEmEIAEAhDAEASCIMAQAohCEAAEmEIQAAhTAEACCJMAQAoBCGAAAkEYYAABTCEACAJMIQAIBCGAIAkEQYAgBQCEMAAJIIQwAACmEIAEASYQgAQCEMAQBIIgwBACiEIQAASYQhAACFMAQAIIkwBACgEIYAACQRhgAAFMIQAIAkwhAAgEIYAgCQRBgCAFAIQwAAkghDAAAKYQgAQBJhCABAIQwBAEgiDAEAKIQhAABJhCEAAIUwBAAgiTAEAKAQhgAAJBGGAAAUwhAAgCTCEACAQhgCAJBEGAIAUAhDAACSCEMAAAphCABAEmEIAEAhDAEASCIMAQAohCEAAEmEIQAAhTAEACCJMAQAoBCGAAAkEYYAABTCEACAJMIQAIBCGAIAkEQYAgBQCEMAAJIIQwAACmEIAEASYQgAQCEMAQBIIgwBACiEIQAASYQhAACFMAQAIIkwBACgEIYAACQRhgAAFMIQAIAkwhAAgEIYAgCQRBgCAFAIQwAAkghDAAAKYQgAQBJhCABAIQwBAEgiDAEAKIQhAABJhCEAAIUwBAAgiTAEAKAQhgAAJBGGAAAUwhAAgCTCEACAQhgCAJBEGAIAUAhDAACSCEMAAAphCABAEmEIAEAhDAEASCIMAQAohCEAAEmEIQAAhTAEACCJMAQAoBCGAAAkEYYAABTCEACAJMIQAIBCGAIAkEQYAgBQCEMAAJIIQwAACmEIAEASYQgAQCEMAQBIIgwBACiEIQAASYQhAACFMAQAIIkwBACgEIYAACQRhgAAFMIQAIAkwhAAgEIYAgCQRBgCAFAIQwAAkghDAAAKYQgAQBJhCABAIQwBAEgiDAEAKIQhAABJhCEAAIUwBAAgiTAEAKAQhgAAJBGGAAAUwhAAgCTCEACAQhgCAJBEGAIAUAhDAACSCEMAAAphCABAEmEIAEAhDAEASCIMAQAohCEAAEmEIQAAhTAEACCJMAQAoBCGAAAkEYYAABTCEACAJMIQAIBCGAIAkEQYAgBQCEMAAJIIQwAACmEIAEASYQgAQCEMAQBIIgwBACiEIQAASYQhAACFMAQAIIkwBACgEIYAACQRhgAAFMIQ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"/>
+    </defs>
+</svg>
